@@ -6,3 +6,6 @@ tmp
 .DS_Store
 .idea
 .sass-cache
+firebase.json
+*.*_log
+npm-debug.log
