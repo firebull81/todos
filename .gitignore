@@ -8,4 +8,4 @@ tmp
 .sass-cache
 firebase.json
 *.*_log
-npm-debug.log
+*.log

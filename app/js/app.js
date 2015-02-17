@@ -1,6 +1,11 @@
 'use strict';
 
-var todoApp = angular.module('todoApp', ['firebase']);
+var todoApp = angular.module('todoApp', ['firebase', 'ngRoute']);
+
+todoApp.config(['$locationProvider', function($locationProvider){
+  $locationProvider.html5Mode(true);
+}]);
+
 todoApp.filter('todoFilter', function ($location) {
   return function (input) {
     var filtered = {};
