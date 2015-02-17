@@ -68,13 +68,13 @@
                 <ng-pluralize count="remainingCount" when="{one:'item left', other:'items left'}"></ng-pluralize>
               </span></li>
               <li>
-                <a ng-class="{selected: location.path() == '/'}" href="#/">All</a>
+                <a ng-class="{selected: location.path() == '/'}" href="/">All</a>
               </li>
               <li>
-                <a ng-class="{selected: location.path() == '/active'}" href="#/active">Active</a>
+                <a ng-class="{selected: location.path() == '/active'}" href="/active">Active</a>
               </li>
               <li>
-                <a ng-class="{selected: location.path() == '/completed'}" href="#/completed">Completed</a>
+                <a ng-class="{selected: location.path() == '/completed'}" href="/completed">Completed</a>
               </li>
               <li>
                 <a href="" class="right alert" ng-click="clearCompletedTodos()" ng-show="completedCount">Clear completed ({{ completedCount }})</a>
